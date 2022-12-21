@@ -1,5 +1,7 @@
 package com.curso.ecommerce.model;
 
+import org.springframework.web.bind.annotation.PostMapping;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -80,7 +82,7 @@ public class Producto {
 		this.usuario = usuario;
 	}
 	
-	@Override
+	@PostMapping("/save")
 	public String toString() {
 		return "Producto [id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", imagen=" + imagen
 				+ ", precio=" + precio + ", cantidad=" + cantidad + "]";
