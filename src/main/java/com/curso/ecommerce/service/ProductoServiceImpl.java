@@ -8,8 +8,11 @@ import org.springframework.stereotype.Service;
 
 import com.curso.ecommerce.model.Producto;
 import com.curso.ecommerce.repository.ProductoRepository;
+
+
 @Service
 public class ProductoServiceImpl implements ProductoService{
+	
 	@Autowired
 	private ProductoRepository productoRepository;
 	@Override
