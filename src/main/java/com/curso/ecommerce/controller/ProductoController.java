@@ -35,4 +35,8 @@ public class ProductoController {
 		productoService.save(producto);
 		return "redirect:/productos";
 	}
+	@GetMapping("/edit")
+	public String edit() {
+		return "productos/edit";
+	}
 }
