@@ -19,10 +19,13 @@ public class DetalleOrden {
 	private double precio;
 	private double total;
 	private double total1;
+	
 	@OneToOne
 	private Orden orden;
+	
 	@ManyToOne
 	private Producto producto;
+	
 	public DetalleOrden() {
 		
 	}
